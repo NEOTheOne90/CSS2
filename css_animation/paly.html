@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 100vh;
+            background: linear-gradient(to right, blue, black);
+        }
+        p {
+            color: aliceblue;
+        }   
+        .space {
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+        }
+        .space1:hover {
+            border-radius: 50%;
+            transform: translateX(600px);
+            transition: all 2s ease;
+        }
+
+        .space2:hover {
+            border-radius: 60%;
+            transform: translateX(600px);
+            transition: all 2s cubic-bezier(0.47, 0, 1, -0.6);
+        }
+
+        .space3:hover {
+            border-radius: 50%;
+            transform: translateX(600px);
+            transition: all 2s cubic-bezier(.82, 0, .96, .2);
+        }
+
+        .space4:hover {
+            border-radius: 50%;
+            transform: translateX(500px);
+            transition: all 3s cubic-bezier(0.82, 0, .07, .87);
+        }
+    </style>
+</head>
+<body>
+    <div class="space space1">
+        <p>1번</p>
+        <img src="imgs/lineship.png">
+    </div>
+    <br>
+    <div class="space space2">
+        <p>2번</p>
+        <img src="imgs/nolineship.png">
+    </div>
+    <br>
+    <div class="space space3">
+        <p>3번</p>
+        <img src="imgs/ufo1.png">
+    </div>
+    <br>
+    <div class="space space4">
+        <p>4번</p>
+        <img src="imgs/ufo2.png">
+    </div>
+    <br>
+</body>
+</html>
